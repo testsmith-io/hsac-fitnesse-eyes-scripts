@@ -1,0 +1,4 @@
+|script|selenium driver setup|
+|eyes get results            |
+|show  |run summary          |
+|stop driver                 |

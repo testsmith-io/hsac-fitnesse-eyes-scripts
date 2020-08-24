@@ -1,0 +1,15 @@
+---
+Test
+---
+|script                                                         |
+|open               |${URL}                                     |
+|Login with username|testUsername     |and password|testPassword|
+|eyes open;         |Hackathon app 0.2|Recent transaction       |
+|eyes set value     |content          |for match level          |
+|eyes check window                                              |
+|eyes close async                                               |
+|click              |css=#amount                                |
+|eyes open;         |Hackathon app 0.2|Sorting is ascending     |
+|eyes set value     |content          |for match level          |
+|eyes check window                                              |
+|eyes close async                                               |

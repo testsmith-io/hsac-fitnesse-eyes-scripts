@@ -1,0 +1,22 @@
+---
+Test
+---
+|script                                                         |
+|open               |${URL}                                     |
+|Login with username|testUsername     |and password|testPassword|
+|click              |css=#showExpensesChart                     |
+|wait for visible   |css=canvas                                 |
+|eyes open;         |Hackathon app 0.1|Bar chart                |
+|eyes check window                                              |
+|eyes close async                                               |
+
+|script                                                         |
+|open               |${URL}                                     |
+|Login with username|testUsername     |and password|testPassword|
+|click              |css=#showExpensesChart                     |
+|wait for visible   |css=canvas                                 |
+|click              |css=#addDataset                            |
+|wait for visible   |css=canvas                                 |
+|eyes open;         |Hackathon app 0.1|Bar chart (extra year)   |
+|eyes check window                                              |
+|eyes close async                                               |

@@ -1,0 +1,35 @@
+---
+Test
+---
+|scenario|Login with username|username|and password|password|
+|enter   |@{username}        |as      |css=#username        |
+|enter   |@{password}        |as      |css=#password        |
+|click   |css=#log-in                                       |
+
+|script                                                                   |
+|open               |${URL}                                               |
+|Login with username|                 |and password           |           |
+|eyes open;         |Hackathon app 0.1|Error message username and password|
+|eyes check window                                                        |
+|eyes close async                                                         |
+
+|script                                                      |
+|open               |${URL}                                  |
+|Login with username|testUsername     |and password     |    |
+|eyes open;         |Hackathon app 0.1|Error message password|
+|eyes check window                                           |
+|eyes close async                                            |
+
+|script                                                         |
+|open               |${URL}                                     |
+|Login with username|                 |and password|testPassword|
+|eyes open;         |Hackathon app 0.1|Error message username   |
+|eyes check window                                              |
+|eyes close async                                               |
+
+|script                                                         |
+|open               |${URL}                                     |
+|Login with username|testUsername     |and password|testPassword|
+|eyes open;         |Hackathon app 0.1|Login success            |
+|eyes check window                                              |
+|eyes close async                                               |

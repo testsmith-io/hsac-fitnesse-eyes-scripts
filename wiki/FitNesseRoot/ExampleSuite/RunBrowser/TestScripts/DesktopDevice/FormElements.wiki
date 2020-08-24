@@ -1,0 +1,8 @@
+---
+Test
+---
+|script                                      |
+|open      |${URL}                           |
+|eyes open;|Hackathon app 0.1|Form components|
+|eyes check window                           |
+|eyes close async                            |

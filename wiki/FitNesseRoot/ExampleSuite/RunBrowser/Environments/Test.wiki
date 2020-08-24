@@ -1,0 +1,23 @@
+---
+Suite
+SymbolicLinks
+  TestScripts: .ExampleSuite.RunBrowser.TestScripts
+Test: no
+---
+!*** Gegevens
+!*> Defines
+!define URL {!-https://demo.applitools.com/hackathon.html-!}
+# !define URL {!-https://demo.applitools.com/hackathonV2.html-!}
+!define USERNAME {!-username-!}
+!define PASSWORD {!-password-!}
+
+*!
+
+|'''Gegevens                          '''|
+|Url                  |${URL}            |
+|Gebruikersnaam       |${USERNAME}       |
+|Wachtwoord           |${PASSWORD}       |
+
+*!
+
+!contents -R2 -g -p -f -h

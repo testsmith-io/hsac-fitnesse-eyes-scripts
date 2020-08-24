@@ -1,0 +1,4 @@
+|scenario|Login with username|username|and password|password|
+|enter   |@{username}        |as      |css=#username        |
+|enter   |@{password}        |as      |css=#password        |
+|click   |css=#log-in                                       |

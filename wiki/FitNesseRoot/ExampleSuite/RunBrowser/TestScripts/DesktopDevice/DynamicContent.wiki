@@ -1,0 +1,10 @@
+---
+Test
+---
+|script                                                         |
+|open               |${URL}?showAd=true                         |
+|Login with username|testUsername     |and password|testPassword|
+|eyes open;         |Hackathon app 0.1|!-DynamicContent-!       |
+|eyes set value     |layout           |for match level          |
+|eyes check window                                              |
+|eyes close async                                               |
